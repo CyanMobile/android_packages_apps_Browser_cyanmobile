@@ -1,0 +1,654 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (C) 2007 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+  
+          http://www.apache.org/licenses/LICENSE-2.0
+  
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- The name of the application. -->
+    <string name="application_name">Böngésző</string>
+    <!-- Displayed with a file picker to choose a file to upload -->
+    <string name="choose_upload">Válassza ki a feltölteni kívánt fájlt</string>
+    <!-- Name of menu item of a new tab.  Also used in the title bar when displaying a new tab -->
+    <string name="new_tab">Új ablak</string>
+    <!-- Name of menu item which brings up a list of the currently active tabs -->
+    <string name="active_tabs">Ablakok</string>
+    <!-- Name of tab containing bookmarks -->
+    <string name="tab_bookmarks">Könyvjelzők</string>
+    <!-- Name of tab containing the user's most visited websites, organized by number of visits -->
+    <string name="tab_most_visited">Leggyakrabban felkeresett</string>
+    <!-- Name of tab containing the user's complete history, organized by time of last visit -->
+    <string name="tab_history">Előzmények</string>
+    <!-- Toast shown when a history item's star is clicked, converting it to a bookmark -->
+    <string name="added_to_bookmarks">Hozzáadva a könyvjelzőkhöz</string>
+    <!-- Toast shown when a history item's star is clicked off, removing its bookmark -->
+    <string name="removed_from_bookmarks">Eltávolítva a könyvjelzők közül</string>
+    <!-- Sign-in dialog -->
+    <!-- This is used as the title of a dialog which is used to sign in to a secure site.
+            "%s1"is replaced with the host and "%s2" with realm -->
+    <string name="sign_in_to">Jelentkezzen be ide:  <xliff:g id="hostname">%s1</xliff:g> \"<xliff:g id="realm">%s2</xliff:g>\"</string>
+    <!-- Prompt for an input box that allows the user to enter their login name -->
+    <string name="username">Név</string>
+    <!-- Prompt for an input box that allows the user to enter their password -->
+    <string name="password">Jelszó</string>
+    <!-- The label on the "sign in" button -->
+    <string name="action">Bejelentkezés</string>
+    <!-- The name of the bookmarks and history search suggestion source.  -->
+    <string name="bookmarks_search">Böngésző</string>
+
+    <!-- Label for a cancel button.  It is used for multiple cancel buttons in different contexts -->
+    <string name="cancel">Mégse</string>
+    <!-- Label for a confirm button.  Used in multiple contexts. -->
+    <string name="ok">OK</string>
+
+    <!-- Displayed on the Find dialog to display the number of matches
+         found in the current page. -->
+    <plurals name="matches_found">
+        <!-- Case of no matches -->
+        <item quantity="zero">Nincsenek találatok</item>
+        <!-- Case of one match -->
+        <item quantity="one">1 találat</item>
+        <!-- Case of "few" (two) matches -->
+        <item quantity="few"><xliff:g id="number" example="2">%d</xliff:g> találat</item>
+        <!-- Case of several matches -->
+        <item quantity="other"><xliff:g id="number" example="137">%d</xliff:g> találat</item>
+    </plurals>
+
+    <!-- Displayed on the title bar while the page is loading -->
+    <string name="title_bar_loading">Betöltés\u2026</string>
+
+    <!-- Menu item -->
+    <string name="page_info">Oldaladatok</string>
+    <!-- Label for a button on an SSL error dialog that allows the user to see
+        Page info screen for the current page -->
+    <string name="page_info_view">Az oldal adatainak megtekintése</string>
+    <!-- Page Info dialog strings -->
+    <!-- Noun.  The url for the current page. Displayed on the Page Info
+            screen. -->
+    <string name="page_info_address">Cím:</string>
+
+    <!-- SSL Error dialogs -->
+    <string name="ssl_warnings_header">Gondok vannak a webhely biztonsági tanúsítványával.</string>
+    <!-- Label for a button on an SSL error dialog that lets the user continue
+            and view the page despite the error -->
+    <string name="ssl_continue">Folytatás</string>
+    <!-- Title for an SSL error dialog  -->
+    <string name="security_warning">Biztonsági figyelmeztetés</string>
+    <!-- Label for a button on an SSL error dialog that lets the user view the
+        certificate -->
+    <string name="view_certificate">Tanúsítvány megtekintése</string>
+
+    <!-- Message in an SSL Error dialog -->
+    <string name="ssl_untrusted">Ez a tanúsítvány nem hiteles tanúsítványkibocsátótól származik.</string>
+    <!-- Message in an SSL Error dialog -->
+    <string name="ssl_mismatch">A webhely neve nem egyezik a tanúsítványon lévő névvel.</string>
+    <!-- Message in an SSL Error dialog -->
+    <string name="ssl_expired">A tanúsítvány lejárt.</string>
+    <!-- Message in an SSL Error dialog -->
+    <string name="ssl_not_yet_valid">A tanúsítvány még nem érvényes.</string>
+    
+    <!-- SSL Certificate dialogs -->
+    <!-- Title for an SSL Certificate dialog -->
+    <string name="ssl_certificate">Biztonsági tanúsítvány</string>
+    <!-- Message on an SSL Certificate dialog -->
+    <string name="ssl_certificate_is_valid">A tanúsítvány érvényes.</string>
+    <!-- Label for an information field on an SSL Certificate Dialog -->
+    <string name="issued_to">Kiállítva a következőnek:</string>
+    <!-- Label for an information field on an SSL Certificate Dialog -->
+    <string name="common_name">Név:</string>
+    <!-- Label for an information field on an SSL Certificate Dialog -->
+    <string name="org_name">Szervezet:</string>
+    <!-- Label for an information field on an SSL Certificate Dialog -->
+    <string name="org_unit">Szervezeti egység:</string>
+    <!-- Label for an information field on an SSL Certificate Dialog -->
+    <string name="issued_by">Kiállította:</string>
+    <!-- Label for an information field on an SSL Certificate Dialog -->
+    <string name="validity_period">Érvényesség:</string>
+    <!-- Label for an information field on an SSL Certificate Dialog -->
+    <string name="issued_on">Kiállítva:</string>
+    <!-- Label for an information field on an SSL Certificate Dialog -->
+    <string name="expires_on">Lejár:</string>
+
+    <!-- Toast informing the user that loading has stopped for the current page. -->
+    <string name="stopping">Leállítás\u2026</string>
+    <!-- Menu item to stop the current page from loading. -->
+    <string name="stop">Leállítás</string>
+    <!-- Menu item to reload or refresh the current page. -->
+    <string name="reload">Frissítés</string>
+    <!-- Menu item to go back to the previous page -->
+    <string name="back">Vissza</string>
+    <!-- Menu item to go to the next page (only useful if the user has previously hit back.) -->
+    <string name="forward">Előre</string>
+    <!-- Button label to confirm saving a bookmark. -->
+    <string name="save">OK</string>
+    <!-- Button label to cancel saving a bookmark. -->
+    <string name="do_not_save">Mégse</string>
+    <!-- Field label in Bookmark dialog box: refers to URL of the page to bookmark -->
+    <string name="location">URL</string>
+    <!-- Field label in Bookmark dialog box: title that the user wishes to use for the bookmark -->
+    <string name="name">Név</string>
+    <!-- Initial value in Location field in Bookmark dialog box -->
+    <string name="http">http://</string>
+    <!-- Menu item that opens a dialog to save a bookmark, initialized with the current page -->
+    <string name="save_to_bookmarks">Könyvjelző hozzáadása</string>
+    <!-- Menu item on the bookmarks page, to edit an existing bookmark -->
+    <string name="edit_bookmark">Könyvjelző szerkesztése</string>
+    <!-- Context menu item to create a shortcut to the bookmark on the desktop -->
+    <string name="create_shortcut_bookmark">Parancsikon a főoldalra</string>
+    <!-- Context menu item to open the currently highlighted bookmark -->
+    <string name="open_bookmark">Megnyitás</string>
+    <!-- Menu item to remove the currently highlighted bookmark-->
+    <string name="remove_bookmark">Könyvjelző törlése</string>
+    <!-- Context menu item to remove a history item from bookmarks -->
+    <string name="remove_from_bookmarks">Eltávolítás a könyvjelzők közül</string>
+    <!-- Menu item to remove the currently highlighted history entry from the list of previously visited sites -->
+    <string name="remove_history_item">Eltávolítás az előzmények közül</string>
+    <!-- Context menu item for setting the bookmark/history item as the homepage -->
+    <string name="set_as_homepage">Beállítás kezdőlapként</string>
+    <!-- Toast informing the user that their action to save a bookmark has succeeded -->
+    <string name="bookmark_saved">Mentve a könyvjelzők közé.</string>
+    <!-- Toast informing the user that their action to save a bookmark did not succeed -->
+    <string name="bookmark_not_saved">Nem sikerült menteni a könyvjelzőt.</string>
+    <!-- Toast confirming that the homepage has been set -->
+    <string name="homepage_set">A kezdőlap beállítva</string>
+    <!-- Error that appears in the title of Bookmark dialog when user selects OK with empty Name field -->
+    <string name="bookmark_needs_title">"Nevet kell adni a könyvjelzőnek."</string>
+        <!-- Error that appears in the title of Bookmark dialog when user selects OK with empty Location field -->
+    <string name="bookmark_needs_url">"Meg kell adni a könyvjelző helyét."</string>
+        <!-- Error that appears in the title of Bookmark dialog when user selects OK with invalid URL -->
+    <string name="bookmark_url_not_valid">Az URL nem érvényes.</string>
+        <!-- Error that appears in the Bookmark dialog when user selects OK with a URL of a type we cannot bookmark -->
+    <string name="bookmark_cannot_save_url">Ezt az URL-t nem lehet a könyvjelzők közé tenni.</string>
+        <!-- Title of a confirmation dialog when the user deletes a bookmark-->
+    <string name="delete_bookmark">Törlés</string>
+    <!-- Menu item in the page that displays all bookmarks. It brings up a
+            dialog that allows the user to bookmark the page that the browser is
+            currently on, but is not visible because the bookmarks page is 
+            showing. -->
+    <string name="bookmark_page">Az utoljára megtekintett oldal felvétele a könyvjelzők közé</string>
+    <!-- Menu item in the page that displays all bookmarks.  Switches to
+            a grid view which shows thumbnails -->
+    <string name="switch_to_thumbnails">Indexkép nézet</string>
+    <!-- Menu item in the page that displays all bookmarks.  Switches to a
+            list view which shows titles -->
+    <string name="switch_to_list">Lista nézet</string>
+    <!-- Summary text under the New Bookmark item on the Bookmarks screen.
+            Tells the user that if they select this item, it will bring up a
+            dialog to bookmark the page that the browser is currently viewing,
+            though it is not currently being displayed, since they are viewing
+            the bookmarks screen. -->
+    <string name="current_page">innen:\u0020</string>
+    <!-- Confirmation dialog message confirming that the user wishes to delete
+            the bookmark they selected for deletion -->
+    <string name="delete_bookmark_warning">A(z) \"<xliff:g id="bookmark">%s</xliff:g>\" könyvjelző törlésre kerül.</string>
+    <!-- Context Menu item to open the selected link in a new window -->
+    <string name="open_in_new_window">Megnyitás új ablakban</string>
+    <!-- Menu item to open a dialog which allows the user to enter a url or do search-->
+    <string name="goto_dot">Ugrás</string>
+    <!-- Menu item that opens up a dialog which allows the user to provide a
+            string and search for it on the page. -->
+    <string name="find_dot">Keresés az oldalon</string>
+    <!-- Menu item to switch to text selection mode for copy and paste. -->
+    <string name="select_dot">Szöveg kijelölése</string>
+    <!-- Title of current windows screen; appears in title bar -->
+    <string name="tab_picker_title">Jelenlegi ablakok</string>
+    <!-- Context Menu item to close the currently selected window -->
+    <string name="tab_picker_remove_tab">Bezárás</string>
+    <!-- Menu item to open the bookmarks page. This is a shorter version that
+            is displayed with an icon -->
+    <string name="bookmarks">Könyvjelzők</string>
+    <!-- Secondary name for the Activity "BrowserBookmarksPage" -->
+    <string name="shortcut_bookmark">Könyvjelző</string>
+    <!-- Menu item to display the History of previously visited pages -->
+    <string name="history">Előzmények</string>
+    <!-- Menu item for viewing downloads from the browser -->
+    <string name="menu_view_download">Letöltések</string>
+    <!-- Context menu item for copying the url of the current page from the
+            title bar -->
+    <string name="copy_page_url">Az oldal URL-jének másolása</string>
+    <!-- Menu item -->
+    <string name="share_page">Oldal megosztása</string>
+    <!-- Context Menu item open the currently selected link in the current
+            window.-->
+    <string name="contextmenu_openlink">Megnyitás</string>
+    <!-- Context Menu item to open the currently selected link in a new
+            window. -->
+    <string name="contextmenu_openlink_newwindow">Megnyitás új ablakban</string>
+    <!-- Context Menu item to create a bookmark for the url of the currently
+            selected link. -->
+    <string name="contextmenu_bookmark_thislink">Link felvétele a könyvjelzők közé</string>
+    <!-- Context Menu item to save the webpage referred to by this link to the
+            SD card (external storage) -->
+    <string name="contextmenu_savelink">Link mentése</string>
+    <!-- Context Menu item to send the url of the selected link to someone else,
+            via Gmail or another app -->
+    <string name="contextmenu_sharelink">Link megosztása</string>
+    <!-- Context Menu item -->
+    <string name="contextmenu_copy">Másolás</string>
+    <!-- Context Menu item to copy the url of the selected link to the
+            clipboard -->
+    <string name="contextmenu_copylink">Link URL-címének másolása</string>
+    <!-- Context Menu item to save the image to external storage -->
+    <string name="contextmenu_download_image">Kép mentése</string>
+    <!-- Context Menu item to view the image by itself in the browser -->
+    <string name="contextmenu_view_image">Kép megtekintése</string>
+    <!-- Context Menu item to set the image as the home screen wallpaper -->
+    <string name="contextmenu_set_wallpaper">Beállítás háttérképként</string>
+
+    <!-- Context Menu item to open the dialer app with the selected phone number
+            -->
+    <string name="contextmenu_dial_dot">Tárcsázás\u2026</string>
+    <!-- Context Menu item to add the selected phone number to the address book.
+            -->
+    <string name="contextmenu_add_contact">Névjegy hozzáadása</string>
+    <!-- Context Menu item to send an email using the selected email address.-->
+    <string name="contextmenu_send_mail">E-mail küldése</string>
+    <!-- Context Menu item to show the currently selected address in the Maps
+            application -->
+    <string name="contextmenu_map">Térkép</string>
+ 
+     <!-- Title of the dialog used for selecting the application that should be
+            used for sharing a link (e.g. Gmail or another app). See also
+            contextmenu_sharelink above -->
+    <string name="choosertitle_sharevia">Megosztás itt:</string>
+
+    <!-- Used as the title of dialogs in the Browser Settings confirming that
+            the user wants to clear (cache, history, or cookie data) -->
+    <string name="clear">Törlés</string>
+
+    <!-- Part of a sentence that says "Replace <url of existing bookmark> with
+            <url of new bookmark>?" -->
+    <string name="replace">A következő cseréje:</string>
+
+    <!-- Title displayed when the bookmarks page is shown -->
+    <string name="browser_bookmarks_page_bookmarks_text">Könyvjelzők</string>
+
+
+    <!-- Settings screen strings -->
+    <!-- Menu item to open the Settings screen -->
+    <string name="menu_preferences">Beállítások</string>
+    <!-- Settings screen, section title -->
+    <string name="pref_content_title">Oldaltartalom-beállítások</string>
+    <!-- Settings label -->
+    <string name="pref_content_load_images">Képek betöltése</string>
+    <!-- Settings label -->
+    <string name="pref_content_load_images_summary">Képek megjelenítése a weboldalakon</string>
+    <!-- Settings label -->
+    <string name="pref_content_block_popups">Előugró ablakok letiltása</string>
+    <!-- Settings label -->
+    <string name="pref_content_javascript">JavaScript engedélyezése</string>
+    <!-- Settings label -->
+    <string name="pref_content_open_in_background">Megnyitás a háttérben</string>
+    <!-- Settings label -->
+    <string name="pref_content_plugins">Plug-inek engedélyezése</string>
+    <!-- Plugin options -->
+    <string-array name="pref_content_plugins_choices">
+        <item>Mindig bekapcsolva</item>
+        <item>Igény szerint</item>
+        <item>Ki</item>
+    </string-array>
+    <!-- Settings summary -->
+    <string name="pref_content_open_in_background_summary">Új ablakok megnyitása a jelenlegi mögött</string>
+    <!-- Settings label -->
+    <string name="pref_content_homepage">Főoldal beállítása</string>
+    <!-- Settings label -->
+    <string name="pref_content_search_engine">Keresőmotor beállítása</string>
+    <!-- Settings summary -->
+    <string name="pref_content_search_engine_summary">Válasszon ki egy keresőmotort</string>
+    <!-- Settings button label -->
+    <string name="pref_use_current">A jelenlegi oldal használata</string>
+    <!-- Settings label -->
+    <string name="pref_content_autofit">Oldalak automatikus igazítása</string>
+    <!-- Settings summary -->
+    <string name="pref_content_autofit_summary">A képernyőhöz igazítja a weboldalakat</string>
+    <!-- Settings label for enabling a mode where the browser is always set to landscape mode -->
+    <string name="pref_content_landscape_only">Megjelenítés csak fekvő tájolással</string>
+    <!-- Settings summary -->
+    <string name="pref_content_landscape_only_summary">Csak a szélesebb, fekvő helyzetben jeleníti meg az oldalakat</string>
+    <!-- Settings label -->
+    <string name="pref_content_invert_color">Színek invertálása</string>
+    <!-- Settings summary -->
+    <string name="pref_content_invert_color_summary">Oldalak megjelenítése invertált színekben</string>
+    <!-- Settings screen, section title -->
+    <string name="pref_privacy_title">Adatvédelmi beállítások</string>
+    <!-- Settings label -->
+    <string name="pref_privacy_clear_cache">A gyorsítótár törlése</string>
+    <!-- Settings summary -->
+    <string name="pref_privacy_clear_cache_summary">A helyileg gyorsítótárazott tartalmak és adatbázisok törlése</string>
+    <!-- Confirmation dialog message -->
+    <string name="pref_privacy_clear_cache_dlg">A helyileg gyorsítótárazott tartalmak és adatbázisok törlésre kerülnek.</string>
+    <!-- Settings label -->
+    <string name="pref_privacy_clear_cookies">Az összes cookie törlése</string>
+    <!-- Settings summary -->
+    <string name="pref_privacy_clear_cookies_summary">A böngésző összes cookie-jának törlése</string>
+    <!-- Confirmation dialog message -->
+    <string name="pref_privacy_clear_cookies_dlg">Minden cookie törlésre kerül.</string>
+    <!-- Settings label -->
+    <string name="pref_privacy_clear_history">Előzmények törlése</string>
+    <!-- Settings summary -->
+    <string name="pref_privacy_clear_history_summary">A böngésző navigációs előzményeinek törlése</string>
+    <!-- Confirmation dialog message -->
+    <string name="pref_privacy_clear_history_dlg">A böngésző navigációs előzményei törlésre kerülnek.</string>
+    <!-- Settings label -->
+    <string name="pref_privacy_clear_form_data">Űrlapadatok törlése</string>
+    <!-- Settings summary -->
+    <string name="pref_privacy_clear_form_data_summary">Minden mentett űrlapadat törlése</string>
+    <!-- Confirmation dialog message -->
+    <string name="pref_privacy_clear_form_data_dlg">Az összes mentett űrlapadat törlésre kerül.</string>
+    <!-- Settings label -->
+    <string name="pref_privacy_clear_passwords">Jelszavak törlése</string>
+    <!-- Settings summary -->
+    <string name="pref_privacy_clear_passwords_summary">Az összes mentett jelszó törlése</string>
+    <!-- Confirmation dialog message -->
+    <string name="pref_privacy_clear_passwords_dlg">Az összes mentett jelszó törlésre kerül.</string>
+    <!-- Settings label -->
+    <string name="pref_privacy_enable_geolocation">Helyadatok engedélyezése</string>
+    <!-- Settings summary -->
+    <string name="pref_privacy_enable_geolocation_summary">A webhelyek hozzáférést kérhetnek a tartózkodási helyéhez</string>
+    <!-- Settings label -->
+    <string name="pref_privacy_clear_geolocation_access">Helyhozzáférés letiltása</string>
+    <!-- Settings summary -->
+    <string name="pref_privacy_clear_geolocation_access_summary">Helyhozzáférés letiltása minden webhelynél</string>
+    <!-- Confirmation dialog message -->
+    <string name="pref_privacy_clear_geolocation_access_dlg">Helyhozzáférés letiltása minden webhelynél</string>
+    <!-- Settings screen, section title -->
+    <string name="pref_security_title">Biztonsági beállítások</string>
+    <!-- Settings label -->
+    <string name="pref_security_remember_passwords">Jelszavak megjegyzése</string>
+    <!-- Settings summary -->
+    <string name="pref_security_remember_passwords_summary">Menti a webhelyekhez tartozó felhasználóneveket és jelszavakat</string>
+    <!-- Settings label -->
+    <string name="pref_security_save_form_data">Űrlapadatok megjegyzése</string>
+    <!-- Settings summary -->
+    <string name="pref_security_save_form_data_summary">Későbbi felhasználás céljából emlékezzen az űrlapokba beírt adatokra</string>
+    <!-- Settings label -->
+    <string name="pref_security_show_security_warning">Biztonsági figyelmeztetések megjelenítése</string>
+    <!-- Settings summmary -->
+    <string name="pref_security_show_security_warning_summary">Figyelmeztetés megjelenítése, ha gond van a webhely biztonságával</string>
+    <!-- Settings label -->
+    <string name="pref_security_accept_cookies">Cookie-k fogadása</string>
+    <!-- Settings summary -->
+    <string name="pref_security_accept_cookies_summary">A webhelyek elmenthetnek és beolvashatnak \"cookie\"-adatokat</string>
+    <!-- Settings label -->
+    <string name="pref_text_size">Szöveg mérete</string>
+    <!-- Settings text size options; appear in Text size dialog box -->
+    <string-array name="pref_text_size_choices">
+        <item>Apró</item>
+        <item>Kicsi</item>
+        <item>Normál</item>
+        <item>Nagy</item>
+        <item>Óriási</item>
+    </string-array>
+    <!-- Title of dialog for setting the text size -->
+    <string name="pref_text_size_dialogtitle">Szöveg mérete</string>
+    <!-- Settings label -->
+    <string name="pref_default_zoom">Alapértelmezett nagyítás</string>
+    <!-- Settings default zoom options; appear in default zoom dialog box -->
+    <string-array name="pref_default_zoom_choices">
+        <item>Távoli</item>
+        <item>Közepes</item>
+        <item>Közeli</item>
+    </string-array>
+    <!-- Title of dialog for setting the default zoom -->
+    <string name="pref_default_zoom_dialogtitle">Alapértelmezett nagyítás</string>
+    <!-- Settings label -->
+    <string name="pref_content_load_page">Oldalak megnyitása áttekintő nézetben</string>
+    <!-- Settings summary -->
+    <string name="pref_content_load_page_summary">Áttekintést ad az újonnan megnyitott oldalakról</string>
+    <!-- Settings screen, section title -->
+    <string name="pref_extras_title">Speciális beállítások</string>
+    <!-- Settings label -->
+    <string name="pref_extras_website_settings">Webhelyek beállításai</string>
+    <!-- Settings summary -->
+    <string name="pref_extras_website_settings_summary">Speciális beállítások az egyes webhelyekhez</string>
+    <!-- Settings label -->
+    <string name="pref_extras_reset_default">Visszaállítás alaphelyzetbe</string>
+    <!-- Settings summary -->
+    <string name="pref_extras_reset_default_summary">Alapértelmezett beállítások visszaállítása</string>
+    <!-- Confirmation dialog message -->
+    <string name="pref_extras_reset_default_dlg">A beállítások visszaállnak az alapértelmezett értékekre.</string>
+    <!-- Confirmation dialog title -->
+    <string name="pref_extras_reset_default_dlg_title">Visszaállítás alaphelyzetbe</string>
+    <!-- Title for a group of settings -->
+    <string name="pref_development_title">Hibakeresés</string>
+    <!-- Settings screen, setting option name -->
+    <string name="pref_default_text_encoding">Szöveg kódolása</string>
+    <!-- Options in the Default encoding dialog box -->
+    <string-array name="pref_default_text_encoding_choices">
+        <item>Latin-1 (ISO-8859-1)</item>
+        <item>Unicode (UTF-8)</item>
+        <item>Chinese (GBK)</item>
+        <item>Chinese (Big5)</item>
+        <item>Japanese (ISO-2022-JP)</item>
+        <item>Japanese (SHIFT_JIS)</item>
+        <item>Japanese (EUC-JP)</item>
+        <!-- TODO: We should add a lot more encodings.  -->
+    </string-array>
+    <!-- Dialog box title -->
+    <string name="pref_default_text_encoding_dialogtitle">Szöveg kódolása</string>
+    <!-- Title for a dialog displayed when the browser has a data connectivity
+            problem -->
+    <string name="browserFrameNetworkErrorLabel">Adatkapcsolat-probléma</string>
+    <!-- Title for a dialog displayed when the browser runs into a file label
+            error -->
+    <string name="browserFrameFileErrorLabel">Probléma van a fájllal</string>
+    <!-- Dialog box title -->
+    <string name="browserFrameFormResubmitLabel">Megerősítés</string>
+    <!-- Dialog box message -->
+    <string name="browserFrameFormResubmitMessage">A megtekinteni kívánt oldal már elküldött adatokat (\"POSTDATA\") is tartalmaz. Amennyiben újraküldi az adatokat, az oldalon lévő űrlappal kapcsolatos valamennyi művelet (például a keresés vagy az online vásárlás) újra végrehajtásra kerül.</string>
+    <!-- Dialog box title -->
+    <string name="loadSuspendedTitle">Nincs hálózati kapcsolat</string>
+    <!-- Dialog box message -->
+    <string name="loadSuspended">A böngésző nem tudja betölteni ezt az oldalt, mert nincs internetkapcsolat.</string>
+    <!-- Menu item -->
+    <string name="clear_history">Előzmények törlése</string>
+    <!-- History screen title; appears in title bar -->
+    <string name="browser_history">A közelmúltban meglátogatott oldalak</string>
+    <!-- Appears on History screen if no history is found -->
+    <string name="empty_history">A böngészési előzmények listája üres.</string>
+    <!-- Displayed at the top of the bookmarks page.  When clicked, it bookmarks the page the browser is currently showing -->
+    <string name="add_new_bookmark">Könyvjelző hozzáadása\u2026</string>
+    <!-- Verb placed in front of a screenshot of a web page that, when clicked,
+            will add that page to bookmarks -->
+    <string name="add_bookmark_short">Hozzáadás:</string>
+
+    <!-- This string is for the browser "Go To" UI. -->
+    <!-- This is the hint text shown in the Go To widget, before text is entered. -->
+    <string name="search_hint">Keressen vagy írjon be egy URL-t</string>
+    <!-- This string is for the browser "Go To" UI. -->
+    <!-- This is the button label in the "Go To" UI. -->
+    <string name="search_button_text">Ugrás</string>
+    <!-- The string used to describe the browser as a searchable item within system search settings. -->
+    <string name="search_settings_description">Könyvjelzők és internetes előzmények</string>
+
+    <!-- Pop-up window dialog -->
+    <!-- Title for a dialog informing the user that the site is attempting to
+            display a popup window -->
+    <string name="attention">Figyelem</string>
+    <!-- Message for a dialog informing the user that the site is attempting to
+            display a popup window -->
+    <string name="popup_window_attempt">A webhely egy előugró ablakot próbál megnyitni.</string>
+    <!-- Label for a button to allow a particular popup window to open -->
+    <string name="allow">Engedélyezés</string>
+    <!-- Label for a button to disallow a particular popup from opening -->
+    <string name="block">Letiltás</string>
+
+    <!-- Title for a dialog informing the user that they cannot open any more
+            windows because the limit has been reached. -->
+    <string name="too_many_windows_dialog_title">Elérte a maximális ablakszámot</string>
+    <!-- Message in a dialog telling the user that they cannot open any more
+            windows because the limit has been reached. -->
+    <string name="too_many_windows_dialog_message">Nem lehet új ablakot megnyitni, mert már meg van nyitva a maximális számú ablak.</string>
+    <!-- Title for a dialog informing the user that they cannot open a subwindow
+            because only one can be open at a time. -->
+    <string name="too_many_subwindows_dialog_title">Már van egy nyitott előugró ablak</string>
+    <!-- Message for a dialog informing the user that they cannot open a
+            subwindow because only one can be open at a time. -->
+    <string name="too_many_subwindows_dialog_message">Nem lehet új előugró ablakot megnyitni, 
+		mert egyszerre csak egy lehet megnyitva.</string>
+
+    <!-- Download History UI strings -->
+    <string name="download_title">Letöltési előzmények</string>
+    <!-- Download history screen string-->
+    <string name="download_unknown_filename">&lt;Ismeretlen&gt;</string>
+    <!-- Context menu item on Download history screen -->
+    <string name="download_menu_open">Megnyitás</string>
+    <!-- Context menu item on Download history screen -->
+    <string name="download_menu_clear">Törlés a listáról</string>
+    <!-- Context menu item in Download history screen -->
+    <string name="download_menu_delete">Törlés</string>
+    <!-- Context menu item in Download history screen -->
+    <string name="download_menu_cancel">Letöltés megszakítása</string>
+    <!-- Menu item -->
+    <string name="download_menu_cancel_all">Minden letöltés megszakítása</string>
+    <!-- Confirmation dialog title -->
+    <string name="download_cancel_dlg_title">Letöltések megszakítása</string>
+    <!-- Confirmation dialog message -->
+    <string name="download_cancel_dlg_msg">Mind a(z) <xliff:g id="download_count">%d</xliff:g> letöltés megszakad és törlésre kerül a letöltési előzményekből.</string>
+    <!-- Confirmation dialog title -->
+    <string name="download_delete_file">Fájl törlése</string>
+    <!-- Dialog title -->
+    <string name="download_file_error_dlg_title">Nincs elég hely</string>
+    <!-- Dialog message -->
+    <string name="download_file_error_dlg_msg">A(z) <xliff:g id="filename">%s</xliff:g> nem tölthető le.\nSzabadítson fel valamennyi tárhelyet a telefonján, majd próbálja meg újra.</string>
+    <!-- Title for a dialog informing the user that the download has failed -->
+    <string name="download_failed_generic_dlg_title">A letöltés nem sikerült</string>
+    <!-- Dialog title [CHAR LIMIT=25] -->
+    <string name="download_no_sdcard_dlg_title" product="nosdcard">USB tárhely nem elérhető</string>
+    <!-- Dialog title -->
+    <string name="download_no_sdcard_dlg_title" product="default">Hiányzó SD-kártya</string>
+    <!-- Dialog message [CHAR LIMIT=NONE] -->
+    <string name="download_no_sdcard_dlg_msg" product="nosdcard">USB storage is required to download <xliff:g id="filename">%s</xliff:g>.</string>
+    <!-- Dialog message -->
+    <string name="download_no_sdcard_dlg_msg" product="default">A(z) <xliff:g id="filename">%s</xliff:g> letöltéséhez SD-kártya szükséges.</string>
+    <!-- Title for a dialog informing the user that the SD card used for
+            external storage is busy so they cannot download anything [CHAR LIMIT=25] -->
+    <string name="download_sdcard_busy_dlg_title" product="nosdcard">USB tárhely nem érhető el</string>
+    <!-- Title for a dialog informing the user that the SD card used for
+            external storage is busy so they cannot download anything -->
+    <string name="download_sdcard_busy_dlg_title" product="default">Az SD-kártya nem érhető el</string>
+    <!-- Message for a dialog informing the user that the SD card used for
+            external storage is busy so they cannot download anything.  Informs
+            the user how to enable SD card storage [CHAR LIMIT=NONE] -->
+    <string name="download_sdcard_busy_dlg_msg" product="nosdcard">Az USB tárhely dolgozik. A letöltések engedélyezéséhez válassza az \"USB-tár kikapcsolása\" lehetőséget.</string>
+    <!-- Message for a dialog informing the user that the SD card used for
+            external storage is busy so they cannot download anything.  Informs
+            the user how to enable SD card storage -->
+    <string name="download_sdcard_busy_dlg_msg" product="default">Az SD-kártya dolgozik. A letöltések engedélyezéséhez válassza az \"USB-tár kikapcsolása\" lehetőséget.</string>
+
+    <!-- Title for a dialog informing the user that there is no application on
+            the phone that can open the file that was downloaded -->
+    <string name="download_no_application_title">A fájlt nem lehet megnyitni</string>
+    <!-- Label for a button to re-attempt downloading a file -->
+    <string name="retry">Újra</string>
+    <!-- Appears in Download history screen if there is no history -->
+    <string name="no_downloads">A letöltési előzmények listája üres.</string>
+    <!-- the following download_xxxx matches the download manager state, ie Downloads.Status -->
+    <string name="download_error">A letöltés nem sikerült.</string>
+    <!-- Appears in Download history screen after an item has downloaded, included item size -->
+    <string name="download_success"><xliff:g id="file">%s</xliff:g> letöltése befejeződött.</string>
+    <!-- Appears in Download history screen while an item is being downloaded -->
+    <string name="download_running">Letöltés\u2026</string>
+    <!-- Message in the list of items which have received download requests
+            telling their status.  This message states that the download has not
+            yet begun -->
+    <string name="download_pending">Letöltés megkezdése\u2026</string>
+    <!-- Message in the list of items which have received download requests
+            telling their status.  This message states that the download is
+            waiting for a network connection to continue -->
+    <string name="download_pending_network">Várakozás adatkapcsolatra\u2026</string>
+    <!-- Message in the list of items which have received download requests
+            telling their status.  This message states that the download has
+            paused to wait for a network connection -->
+    <string name="download_running_paused">Várakozás adatkapcsolatra\u2026</string>
+    <!-- Message in the list of items which have received download requests
+            telling their status.  This message states that the download has
+            been canceled -->
+    <string name="download_canceled">A letöltés megszakítva.</string>
+    <!-- Message in the list of items which have received download requests
+            telling their status.  This message states that the download will
+            not happen because the content is not supported by the phone -->
+    <string name="download_not_acceptable">Nem lehet letölteni, mert a telefon nem támogatja ezt a tartalmat.</string>
+    <!-- Message in the list of items which have received download requests
+            telling their status.  This message states that the download did not
+            finish because there is not enough storage for the file -->
+    <string name="download_file_error">A letöltés nem fejezhető be, mert nincs elég hely.</string>
+    <!-- Message in the list of items which have received download requests
+            telling their status.  This message states that the item cannot be
+            downloaded because it cannot determine the length of the item -->
+    <string name="download_length_required">Nem lehet letölteni. Az elem mérete nem állapítható meg.</string>
+    <!-- Message in the list of items which have received download requests
+            telling their status.  This message states that the download was
+            interrupted and cannot be resumed -->
+    <string name="download_precondition_failed">A letöltés megszakítva, nem lehet folytatni.</string>
+
+    <!-- The description of the suggestion that lets the user search the web for the query currently
+         in the text field. -->
+    <string name="search_the_web">Keresés az interneten</string>
+
+    <!-- HTML5 dialogs -->
+    <!-- Used as a status bar notification when the browser is running out of space trying to allocate or increase the database quota for an HTML5 databae or application cache. -->
+    <string name="webstorage_outofspace_notification_title">A böngésző tárterülete megtelt</string>
+    <string name="webstorage_outofspace_notification_text">Kattintson terület felszabadításához.</string>
+    <!-- Used in the Browser Settings -->
+    <string name="webstorage_clear_data_title">Tárolt adatok törlése</string>
+    
+    <!-- Confirmation dialog when the user ask to clear all data for an origin -->
+    <string name="webstorage_clear_data_dialog_title">Tárolt adatok törlése</string>
+    <string name="webstorage_clear_data_dialog_message">A webhely által eltárolt összes adat törlésre kerül</string>
+    <string name="webstorage_clear_data_dialog_ok_button">Az összes törlése</string>
+    <string name="webstorage_clear_data_dialog_cancel_button">Mégse</string>
+    <!-- Strings used in the summary of origins -->
+    <string name="webstorage_origin_summary_mb_stored">MB tárolva a telefonján</string>
+        <!-- String shown in a progress view while a video is loading, before it starts playing -->
+    <string name="loading_video">Videó betöltése</string>
+
+    <!-- Geolocation -->
+    <!-- Permissions prompt -->
+    <string name="geolocation_permissions_prompt_message">A(z) <xliff:g id="website origin" example="maps.google.com">%s</xliff:g> meg akarja ismerni az Ön tartózkodási helyét</string>
+    <string name="geolocation_permissions_prompt_share">Hely megosztása</string>
+    <string name="geolocation_permissions_prompt_dont_share">Elutasítás</string>
+    <string name="geolocation_permissions_prompt_remember">A beállítás megjegyzése</string>
+    <!-- Permissions prompt toast -->
+    <string name="geolocation_permissions_prompt_toast_allowed">A webhely hozzáfér a tartózkodási helyéhez. Ezt a Beállítások -&gt; Webhely beállításai pontban módosíthatja</string>
+    <string name="geolocation_permissions_prompt_toast_disallowed">A webhely nem fér hozzá a tartózkodási helyéhez. Ezt a Beállítások -&gt; Webhely beállításai pontban módosíthatja</string>
+    <!-- Settings page, Advanced Settings -> Website settings -> <origin> -->
+    <string name="geolocation_settings_page_title">Helyhozzáférés letiltása</string>
+    <string name="geolocation_settings_page_summary_allowed">A webhely jelenleg hozzáférhet a tartózkodási helyéhez</string>
+    <string name="geolocation_settings_page_summary_not_allowed">A webhely jelenleg nem férhet hozzá a tartózkodási helyéhez</string>
+    <!-- Settings page dialog -->
+    <string name="geolocation_settings_page_dialog_title">Helyhozzáférés letiltása</string>
+    <string name="geolocation_settings_page_dialog_message">A webhely hozzáférése a tartózkodási helyhez letiltásra kerül</string>
+    <string name="geolocation_settings_page_dialog_ok_button">Hozzáférés letiltása</string>
+    <string name="geolocation_settings_page_dialog_cancel_button">Mégse</string>
+    <!-- Label for the menu item in the website settings activity used to clear data stored by all websites -->
+    <string name="website_settings_clear_all">Az összes törlése</string>
+    <string name="website_settings_clear_all_dialog_title">Törli az összes webhely beállítását?</string>
+    <string name="website_settings_clear_all_dialog_message">Minden webhelyadat és tartózkodási hellyel kapcsolatos engedély törlésre kerül.</string>
+    <string name="website_settings_clear_all_dialog_ok_button">Minden adat törlése</string>
+    <string name="website_settings_clear_all_dialog_cancel_button">Mégse</string>
+
+    <!-- Text in the progress dialog when we are setting an image as the home screen wallpaper. -->
+    <string name="progress_dialog_setting_wallpaper">Háttérkép beállítása\u2026</string>
+
+    <string name="error_console_header_text_minimized">JavaScript konzol megjelenítése</string>
+    <string name="error_console_header_text_maximized">JavaScript konzol</string>
+    <string name="error_console_eval_text_hint">JavaScript értékelés</string>
+    <string name="error_console_eval_button_text">Értékelés</string>
+
+    <string name="pref_show_zoom_controls">Vizuális nagyítási vezérlők megjelenítése</string>
+    <string name="pref_full_screen_mode">Teljes képernyő</string>
+
+    <string name="incog_tab">Inkognitó mód bekapcsolása</string>
+    <string name="dis_incog_tab">Inkognitó mód kikapcsolása</string>
+    <string name="pref_select_user_agent">Böngészőazonosító választása</string>
+</resources>
